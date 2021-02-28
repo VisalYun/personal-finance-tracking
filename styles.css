@@ -1,0 +1,168 @@
+body{
+    font-family: Tahoma;
+    color: #444;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#form-container{
+    float: left;
+    width: 30%;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+#form-container ul{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 5px;
+    z-index: 1;
+}
+
+#form-container li{
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+}
+
+#form-container li.active{
+    opacity: 1;
+}
+
+#form-container li#income-tab{
+    background-color: rgb(29, 207, 82);
+}
+
+#form-container li#expense-tab{
+    background-color: rgb(207, 29, 29);
+}
+
+#form-container .panel{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+}
+
+#form-container .panel.active{
+    display: block;
+}
+
+#form-container .panel .inputField{
+    display: block;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+}
+
+#form-container .panel #submit-btn{
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form-container .panel#income{
+    border: 1px solid rgb(29, 207, 82);
+}
+
+#form-container .panel#income .inputField{
+    border-bottom: 1px solid rgb(29, 207, 82);
+}
+
+#form-container .panel#income label{
+    color: rgb(24, 153, 63);
+}
+
+#form-container .panel#income #submit-btn{
+    background-color:  rgb(29, 207, 82);
+}
+
+#form-container .panel#expense{
+    border: 1px solid rgb(207, 29, 29);
+}
+
+#form-container .panel#expense .inputField{
+    border-bottom: 1px solid rgb(207, 29, 29);
+}
+
+#form-container .panel#expense label{
+    color: rgb(153, 24, 24);
+}
+
+#form-container .panel#expense #submit-btn{
+    background-color:  rgb(207, 29, 29);
+}
+
+#detail-container{
+    float: right;
+    width: 30%;
+    margin-top: 7%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+#detail-container ul{
+    margin: 0;
+    padding: 0;
+}
+
+#detail-container .tabs{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#detail-container .tabs li{
+    display: inline-block;
+    width: 40%;
+    padding: 10px 14px;
+    border-radius: 4px;
+    color: white;
+    font-size: 24px;
+}
+
+#detail-container .tabs li#income-amount{
+    background-color: rgb(29, 207, 82);
+}
+
+#detail-container .tabs li#expense-amount{
+    background-color: rgb(207, 29, 29);
+}
+
+#detail-list ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#detail-list li{
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+#detail-list li.income{
+    border-left: 5px solid rgb(29, 207, 82);
+}
+
+#detail-list li.expense{
+    border-left: 5px solid rgb(207, 29, 29);
+}
+
+.amount{
+    float: right;
+}

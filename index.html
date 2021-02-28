@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Finance Tracker</title>
+</head>
+<body>
+    <section id="form-container">
+        <ul class="tabs">
+            <li data-target="#income" class="active" id="income-tab">Income</li>
+            <li data-target="#expense" id="expense-tab">Expense</li>
+        </ul>
+        <div class="panel active" id="income">
+            <form action="#" id="form">
+                <label for="income">Income:</label>
+                <input type="text" class="inputField" id="income-title">
+                <label for="amount">Amount:</label>
+                <input type="text" class="inputField" id="income-amount">
+                <input type="submit" id="submit-btn">
+            </form>
+        </div>
+        <div class="panel" id="expense">
+            <form action="#" id="form">
+                <label for="expense">Expense:</label>
+                <input type="text" class="inputField" id="expense-title">
+                <label for="amount">Amount:</label>
+                <input type="text" class="inputField" id="expense-amount">
+                <input type="submit" id="submit-btn">
+            </form>
+        </div>  
+    </section>
+
+    <section id="detail-container">
+        <h1>Total: 100$</h1>
+        <hr>
+        <p>Updated: 28/02/2021</p>
+        <ul class="tabs">
+            <li id="income-amount">Income<br>200$</li>
+            <li id="expense-amount">Expense<br>100$</li>
+        </ul>
+        <div id="detail-list">
+	    	<ul>
+                <li>
+	    			<span class="activity"><strong>Activity</strong></span>
+	    			<span class="amount"><strong>Amount</strong></span>
+	    		</li>
+	    		<li class="income">
+	    			<span class="activity">Salary Payment</span>
+	    			<span class="amount"><strong>200$</strong></span>
+	    		</li>
+	    		<li class="expense">
+	    			<span class="activity">School fee</span>
+	    			<span class="amount"><strong>50$</strong></span>
+	    		</li>
+	    		<li class="expense">
+	    			<span class="activity">Parking Space Payment</span>
+	    			<span class="amount"><strong>20$</strong></span>
+	    		</li>
+	    		<li class="expense">
+	    			<span class="activity">Gym membership Payment</span>
+	    			<span class="amount"><strong>30$</strong></span>
+	    		</li>
+	    	</ul>
+	    </div>
+    </section>
+</body>
+</html>
