@@ -14,32 +14,32 @@
             <li data-target="#expense" id="expense-tab">Expense</li>
         </ul>
         <div class="panel active" id="income">
-            <form action="#" id="form">
+            <form action="#" id="income-form">
                 <label for="income">Income:</label>
-                <input type="text" class="inputField" id="income-title">
+                <input type="text" class="inputField" id="activity">
                 <label for="amount">Amount:</label>
-                <input type="text" class="inputField" id="income-amount">
+                <input type="text" class="inputField" id="amount">
                 <input type="submit" id="submit-btn">
             </form>
         </div>
         <div class="panel" id="expense">
-            <form action="#" id="form">
+            <form action="#" id="expense-form">
                 <label for="expense">Expense:</label>
-                <input type="text" class="inputField" id="expense-title">
+                <input type="text" class="inputField" id="activity">
                 <label for="amount">Amount:</label>
-                <input type="text" class="inputField" id="expense-amount">
+                <input type="text" class="inputField" id="amount">
                 <input type="submit" id="submit-btn">
             </form>
         </div>  
     </section>
 
     <section id="detail-container">
-        <h1>Total: 100$</h1>
+        <h1 id="total-amount">Total: <span>100$</span></h1>
         <hr>
         <p>Updated: 28/02/2021</p>
         <ul class="tabs">
-            <li id="income-amount">Income<br>200$</li>
-            <li id="expense-amount">Expense<br>100$</li>
+            <li id="income-amount">Income<br><span>200$</span></li>
+            <li id="expense-amount">Expense<br><span>100$</span></li>
         </ul>
         <div id="detail-list">
 	    	<ul>
@@ -53,18 +53,19 @@
 	    		</li>
 	    		<li class="expense">
 	    			<span class="activity">School fee</span>
-	    			<span class="amount"><strong>50$</strong></span>
+	    			<span class="amount"><strong>-50$</strong></span>
 	    		</li>
 	    		<li class="expense">
 	    			<span class="activity">Parking Space Payment</span>
-	    			<span class="amount"><strong>20$</strong></span>
+	    			<span class="amount"><strong>-20$</strong></span>
 	    		</li>
 	    		<li class="expense">
 	    			<span class="activity">Gym membership Payment</span>
-	    			<span class="amount"><strong>30$</strong></span>
+	    			<span class="amount"><strong>-30$</strong></span>
 	    		</li>
 	    	</ul>
 	    </div>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
